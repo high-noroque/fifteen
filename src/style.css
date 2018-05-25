@@ -3,19 +3,22 @@ body {
     margin: 20px;
 }
 
-ol, ul {
-    padding-left: 30px;
-}
-
-.board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
 .square {
-    background: #fff;
-    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 56px;
+    margin-right: 2px;
+    margin-top: 2px;
+    padding: 0;
+    text-align: center;
+    width: 56px;
+}
+
+.tile {
+    border: 1px solid #000;
+    border-radius: 2px;
     float: left;
     font-size: 24px;
     font-weight: bold;
@@ -26,14 +29,6 @@ ol, ul {
     padding: 0;
     text-align: center;
     width: 55px;
-}
-
-.square:focus {
-    outline: none;
-}
-
-.kbd-navigation .square:focus {
-    background: #ddd;
 }
 
 .game {
